@@ -22,7 +22,7 @@ def remove_extra_text(text):
         return text
 
 def get_parsed_template_wikicode(node):
-    line = ''
+    line = ""
     if find_code(node['_code']) is not None and find_code(node['_nameCode']) is not None:
         line = line + '{{EffectDetails'
         line = line + '|name=' + find_code(node['_nameCode'])
@@ -42,12 +42,10 @@ def get_parsed_template_wikicode(node):
 def main():
     file = open("effects-parsed.txt", "w", encoding="utf-8")
     lines = []
-
     with open('SkillTooltipDataBasicList.txt', "r", encoding="utf-8") as skill_tooltip_json_file:
         tooltip = json.load(skill_tooltip_json_file)
         for node in tooltip['SkillTooltipDataBasicList']['_itemList']:
             lines.append(get_parsed_template_wikicode(node))
-
     lines.sort()
     for line in lines:
         file.write(line)
