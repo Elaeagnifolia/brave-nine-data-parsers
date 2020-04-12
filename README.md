@@ -1,6 +1,6 @@
 # brown-dust-data-parsers
 
-Python scripts used to parse Brown Dust JSON Data to Wikicode on https://browndust.wiki
+Python scripts used to parse Brave Nine JSON Data to Wikicode on https://bravenine.miraheze.org
 * These previously parsed the XML Data files, but these have been deprecated in-game.
 
 ## Requirements
