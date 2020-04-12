@@ -1,4 +1,4 @@
-# brown-dust-data-parsers
+# brave-nine-data-parsers
 
 Python scripts used to parse Brave Nine JSON Data to Wikicode on https://bravenine.miraheze.org
 * These previously parsed the XML Data files, but these have been deprecated in-game.
